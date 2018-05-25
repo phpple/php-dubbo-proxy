@@ -1,0 +1,23 @@
+{
+  "name": "phpple/php-dubbo-proxy",
+  "version": "0.1.0",
+  "description": "A dubbo's proxy for php developer, based on dubbo's telnet protocol.",
+  "type": "n",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ronnie Deng",
+      "email": "comdeng@live.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.5",
+    "ext-zookeeper": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "phpple\\php_dubbo_proxy\\": "src"
+    }
+  }
+}
