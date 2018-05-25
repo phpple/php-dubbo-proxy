@@ -142,9 +142,10 @@ class Proxy
     private function invoke($provider, $method, $args)
     {
         $fh = fsockopen($provider['host'], $provider['port']);
+        $timeout = isset($provider['options']['timeout']) ? $provider['options']['timeout']/1000 : 5;
         stream_set_blocking($fh, 0);
         stream_set_write_buffer($fh, 0);
-        stream_set_timeout($fh, $provider['options']['timeout'] / 1000 ?? 5);
+        stream_set_timeout($fh, $timeout);
         $args = json_encode($args);
         $args = substr($args, 1, -1);
         $cmd = sprintf("invoke %s.%s(%s)", $provider['options']['interface'], $method, $args);
