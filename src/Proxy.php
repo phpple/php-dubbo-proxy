@@ -170,7 +170,7 @@ class Proxy
                 throw new \Exception('dubbo.noService');
             }
             if ($buffer !== false) {
-                $output[] = rtrim($buffer, "\r\n");
+                $output[] = rtrim($buffer);
             } else {
                 $num++;
                 if ($num > 1000000) {
