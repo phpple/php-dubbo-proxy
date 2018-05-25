@@ -13,14 +13,21 @@ Process
 
 3. Call the telnet command invoke, such as `invoke com.phpple.service.FooService.bar('hello,world')\n`.
    
-   You can find the telnet commands at [English](http://dubbo.apache.org/books/dubbo-user-book-en/references/telnet.html) [中文](http://dubbo.apache.org/books/dubbo-user-book/references/telnet.html)
+   You can find the telnet commands at: [[English]](http://dubbo.apache.org/books/dubbo-user-book-en/references/telnet.html) [[中文]](http://dubbo.apache.org/books/dubbo-user-book/references/telnet.html)
 
 4. Read from the socket's response, and parse it. 
 
 Requirement
 -----------
 
-* php zookeeper extension
+* php [zookeeper extension](http://pecl.php.net/package/zookeeper)
+
+Install
+-------
+
+```bash
+composer require phpple/php-dubbo-proxy
+```
 
 
 Example
