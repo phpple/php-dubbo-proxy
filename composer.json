@@ -1,6 +1,6 @@
 {
   "name": "phpple/php-dubbo-proxy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A dubbo's proxy for php developer, based on dubbo's telnet protocol.",
   "type": "n",
   "license": "MIT",
